@@ -174,7 +174,7 @@ public class manejoInventario {
         String nombre = scanner.nextLine();
 
         for (mascota mascota : mascotas) {
-            if (mascota.getNombre().equalsIgnoreCase(nombre)) {
+            if (mascota.getNombre() == nombre) {
                 System.out.println(mascota);
                 return;
             }
@@ -209,4 +209,10 @@ public class manejoInventario {
         }
         System.out.println("La mascota " + nombre + " no fue encontrada.");
     }
+
+    public void vaciarInventario() {
+        mascotas.clear();
+        System.out.println("Historial vaciado correctamente.");
+    }
+    
 }

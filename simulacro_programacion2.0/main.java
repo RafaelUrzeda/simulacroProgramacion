@@ -15,6 +15,7 @@ public class main {
             System.out.println("3. Eliminar mascota");
             System.out.println("4. Mostrar información de una mascota");
             System.out.println("5. Mostrar información de todas las mascotas");
+            System.out.println("6. Vaciar el inventario de mascotas");
             System.out.println("0. Salir");
             System.out.print("Ingrese la opción deseada: ");
             opcion = scanner.nextInt();
@@ -34,6 +35,9 @@ public class main {
                     break;
                 case 5:
                     manejoInventario.mostrarTodasLasMascotas();
+                    break;
+                case 6:
+                    manejoInventario.vaciarInventario();
                     break;
                 case 0:
                     System.out.println("Saliendo del programa...");
